@@ -1,0 +1,139 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.align {
+    align-items: center;
+}
+
+/* start of nav */
+.nav {
+    background-color: #9fc5f8;
+    justify-content: space-between;
+    padding: 20px 20px 20px 100px;
+}
+.headertop {
+    color: white;
+}
+
+.links {
+    margin-right: 100px;
+}
+
+.links h2 li {
+    margin-left: 20px;
+    color: transparent;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+/* end of nav */
+
+/* start of header */
+.mainheader {
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    margin: 20px 100px 20px 100px;
+    padding-bottom: 20px;
+}
+
+.temp select{
+    margin-left: 20px;
+    height: 40px;
+    width: 60px;
+    border: 2px solid black;
+}
+/* end of header */
+
+/* start of main body */
+.main {
+    /* background-color: #FFFDD0; */
+    padding: 0% 10% 0% 10%;
+    justify-content: space-evenly;
+}
+
+.columns {
+    /* background-color: white; */
+    height: 100%;
+    text-align: center;
+}
+
+.col-1 {
+    padding: 20px;
+    flex:1;
+    /* background-color: rgb(181,101,30); */
+}
+
+.col-2 {
+    padding: 20px;
+    flex:1;
+    /* background-color: #949E83; */
+}
+
+.col-3 {
+    padding: 20px;
+    flex:1;
+    /* background-color: #949E83; */
+}
+
+.col-4 {
+    padding: 20px;
+    flex:1;
+    /* background-color: #949E83; */
+}
+
+.profile {
+    background-color: #eeeeee;
+    padding: 20px;
+}
+
+.icon-s {
+    border-radius: 50%;
+    height:200px;
+    padding: 20px;
+}
+
+.hotcold {
+    justify-content: space-between;
+    margin: 20px ;
+    font-size: 30px;
+}
+
+.header {
+    color: black;
+}
+
+.hot {
+    color: #cf2a27;
+}
+
+.cold {
+    color: #2b78e4;
+}
+/* end of main body */
+
+/* main alert start*/
+.mainalert {
+    padding: 20px;
+    border: 2px solid black;
+    background-color: #eeeeee;
+    justify-content: space-between;
+    position: fixed;
+    
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: #9fc5f8;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+}
+/* main alert end */

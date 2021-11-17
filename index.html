@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src = "script.js"></script>
+</head>
+<body>
+    <!-- nav bar start -->
+    <div class = "nav flex align">
+        <div class = "flex align">
+            <h1 class = "headertop">DojoWeather</h1>
+        </div>
+        <div class = "links">
+            <h2>
+                <ul class = "flex align">
+                    <li onclick = "alert('Loading weather report...')"><a href="#" class="active">Burbank</a></li>
+                    <li onclick = "alert('Loading weather report...')"><a href="#" class="active">Chicago</a></li>
+                    <li onclick = "alert('Loading weather report...')"><a href="#" class="active">Dallas</a></li>
+                </ul>
+            </h2>    
+        </div>
+    </div>
+    <!-- nav bar end -->
+
+    <!-- header start -->
+    <div class = "mainheader flex align">
+        <div class = "flex align">
+            <h1 class = "cityheader">San Jose</h1>
+        </div>
+        <div class = "temp flex align">
+            <h3>show temperature in</h3>
+            <select onchange = "convert(this)">
+                <option>°C</option>
+                <option>°F</option>
+            </select>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- body start -->
+    <div class = "main flex align">
+        <div class = "columns flex align">
+            <div class = "col-1">
+                <div class = "profile">
+                    <div class = "header">
+                        <h1>Today</h1>
+                        <img src = "assets/some_rain.png" class = "icon-s">
+                        <h2>some rain</h2>
+                        <div class = "hotcold flex">
+                            <p class = "hot" id = "temp1">24°</p>
+                            <p class = "cold" id = "temp2">18°</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-2">
+                <div class = "profile">
+                    <div class = "header">
+                        <h1>Tomorrow</h1>
+                        <img src = "assets/some_sun.png" class = "icon-s">
+                        <h2>some sun</h2>
+                        <div class = "hotcold flex">
+                            <p class = "hot" id = "temp3">27°</p>
+                            <p class = "cold" id = "temp4">19°</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-3">
+                <div class = "profile">
+                    <div class = "header">
+                        <h1>Friday</h1>
+                        <img src = "assets/some_clouds.png" class = "icon-s">
+                        <h2>some clouds</h2>
+                        <div class = "hotcold flex">
+                            <p class = "hot" id = "temp5">21°</p>
+                            <p class = "cold" id = "temp6">16°</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-4">
+                <div class = "profile">
+                    <div class = "header">
+                        <h1>Saturday</h1>
+                        <img src = "assets/some_sun.png" class = "icon-s">
+                        <h2>some sun</h2>
+                        <div class = "hotcold flex">
+                            <p class = "hot" id = "temp7">26°</p>
+                            <p class = "cold" id = "temp8">21°</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- body end -->
+
+    <!-- alert start -->
+    <div class = "mainalert flex align" id = "alert">
+        <div>
+            <img src = "assets/cookie.png" class = "cookie">
+        </div>
+        <div class = "alertdesc">
+            <h2>Stop! Cookie Time</h2>
+            <p>We use cookies (sadly not the edible ones) to personalize<br>
+            content and ads, to provide social media features and to<br>
+            analyse our traffic. <a href = "#">Read more...</a></p>
+        </div>
+        <button class = "btn" onclick = "remove('#alert')">I Accept</button>
+    </div>
+    <!-- alert end -->
+</body>
+</html>
